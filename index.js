@@ -42,12 +42,13 @@ function appCreate() {
             createTeam()
         }) 
     }
+
     function createTeam() {
         inquirer.prompt([
             {
                 type: 'list',
                 name: 'teamList',
-                message: '',
+                message: 'Do you have any other team members?',
                 choices: ['Engineer', 'Intern', 'No other team members']
             }
         ]) .then(userChoice => {
@@ -63,6 +64,7 @@ function appCreate() {
             }
         })
     }
+
     function addEngineer() {
         inquirer.prompt([
             {
@@ -91,7 +93,7 @@ function appCreate() {
             idArr.push(answers.engId);
 
             createTeam()
-        }) 
+        })
     }
 
     function addIntern() {
