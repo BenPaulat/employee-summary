@@ -1,4 +1,4 @@
-const render = teamMembersArr => { 
+function render(teamMembersArr) { 
     let team = ''
 
     for (i = 0; i < teamMembersArr.length; i++) {        
@@ -15,25 +15,22 @@ const render = teamMembersArr => {
         };
 
         team = team + `
-        <div>
-            <h2 class='title'>
-                <div class='name'>${teamMembersArr[i].name}</div>
-                <div class='role'>${role}</div>
-            </h2>
-            <article class='description'>
-                <div class='id'>${teamMembersArr[i].id}</div>
-                <div class='email'>
-                    <a href='mailto:${teamMembersArr[i].email}'>${teamMembersArr[i].email}</a>
-                </div>
-                <div class='info'>${info}</div>
-            </article>
+        <div class='card' style='width:18rem;'>
+            <div class='card-body'>
+                <h5 class='card-title'>${teamMembersArr[i].name}</h5>
+                <h6 class='card-subtitle mb-2 text-muted'>${role}</h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">${teamMembersArr[i].id}</li>
+                    <li class="list-group-item">
+                        <a href='mailto:${teamMembersArr[i].email}'>${teamMembersArr[i].email}</a>
+                    </li>
+                    <li class="list-group-item">${info}</li>
+                </ul>
+            </div>
         </div>
     `}
+    // console.log(team)
 
-    
-};
-
-module.exports = team => {
     return `<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -51,7 +48,7 @@ module.exports = team => {
             <div class="container">
                 <div class="row align-items-start">
                     <div class="col">
-                        ${render(team)}
+                        ${team}
                     </div>
                 </div>
             </div>
@@ -59,3 +56,5 @@ module.exports = team => {
     </body>
     </html>`
 }
+
+module.exports = render
