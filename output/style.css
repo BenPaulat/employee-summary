@@ -19,5 +19,6 @@
 };
 
 header {
-    background-color: var(--bs-cyan)
+    background-color: var(--bs-cyan);
+    text-align: center;
 };
