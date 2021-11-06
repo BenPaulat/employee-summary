@@ -128,11 +128,11 @@ function appCreate() {
     }
 
     function buildTeam() {
-        if (fs.existsSync(OUTPUT_DIR)) {
+        if (!fs.existsSync(OUTPUT_DIR)) {
             fs.mkdirSync(OUTPUT_DIR);
         }
-        // fs.writeFileSync(outputPath, render(teamMembersArr), 'utf-8');
-        console.log(render(teamMembersArr));
+        fs.writeFileSync(outputPath, render(teamMembersArr), 'utf-8');
+        // console.log(render(teamMembersArr));
     }
     createManager()
 }
