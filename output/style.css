@@ -16,4 +16,8 @@
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
-  }
+};
+
+header {
+    background-color: var(--bs-cyan)
+};
