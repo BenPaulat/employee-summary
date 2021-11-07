@@ -7,7 +7,7 @@ function render(teamMembersArr) {
         if (role === 'Manager') {
             info = teamMembersArr[i].officeNumber
         } else if (role === 'Engineer') {
-            info = `<a href='https://github.com/${teamMembersArr[i].github}'>${teamMembersArr[i].github}</a>`
+            info = `Github Link: <a href='https://github.com/${teamMembersArr[i].github}'>${teamMembersArr[i].github}</a>`
         } else if (role === 'Intern') {
             info = teamMembersArr[i].school
         } else {
