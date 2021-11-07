@@ -21,7 +21,7 @@ function render(teamMembersArr) {
                 <h6 class='card-subtitle mb-2 text-muted'>${role}</h6>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Employee ID: ${teamMembersArr[i].id}</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item"> Email: 
                         <a href='mailto:${teamMembersArr[i].email}'>${teamMembersArr[i].email}</a>
                     </li>
                     <li class="list-group-item">${info}</li>
