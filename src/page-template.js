@@ -9,7 +9,7 @@ function render(teamMembersArr) {
         } else if (role === 'Engineer') {
             info = `Github Link: <a href='https://github.com/${teamMembersArr[i].github}'>${teamMembersArr[i].github}</a>`
         } else if (role === 'Intern') {
-            info = teamMembersArr[i].school
+            info = `School Name: ${teamMembersArr[i].school}`
         } else {
             console.log('This role is not defined');
         };
