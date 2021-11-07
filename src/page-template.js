@@ -15,7 +15,7 @@ function render(teamMembersArr) {
         };
 
         team = team + `
-        <div class='card' style='width:18rem;'>
+        <div class='card container d-inline-flex' style='width:18rem;'>
             <div class='card-body'>
                 <h5 class='card-title'>${teamMembersArr[i].name}</h5>
                 <h6 class='card-subtitle mb-2 text-muted'>${role}</h6>
