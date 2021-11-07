@@ -42,7 +42,7 @@ function render(teamMembersArr) {
     </head>
     <body>
         <header>
-            <h1 class='bg-primary text-center'>My Team</h1>
+            <h1 class='bg-primary text-center p-5'>My Team</h1>
         </header>
             <section>
             <div class="container">
