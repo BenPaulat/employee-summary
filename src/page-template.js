@@ -5,7 +5,7 @@ function render(teamMembersArr) {
         let role = teamMembersArr[i].getRole()
         let info
         if (role === 'Manager') {
-            info = teamMembersArr[i].officeNumber
+            info = `Office Number: ${teamMembersArr[i].officeNumber}`
         } else if (role === 'Engineer') {
             info = `Github Link: <a href='https://github.com/${teamMembersArr[i].github}'>${teamMembersArr[i].github}</a>`
         } else if (role === 'Intern') {
