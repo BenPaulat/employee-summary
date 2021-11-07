@@ -29,7 +29,6 @@ function render(teamMembersArr) {
             </div>
         </div>
     `}
-    // console.log(team)
 
     return `<!DOCTYPE html>
     <html lang="en">
