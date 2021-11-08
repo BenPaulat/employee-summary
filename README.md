@@ -19,7 +19,7 @@
   Use this program when you need to generate a page to display your team and their information.
 
   ## Video of Use
-  
+  https://watch.screencastify.com/v/LFKoAGJNuLpdAbn4OV08
 
   ## Contributions
   [BenPaulat](https://github.com/BenPaulat)
